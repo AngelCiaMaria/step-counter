@@ -11,6 +11,7 @@ steps = 0
 basic.forever(function () {
     if (input.acceleration(Dimension.X) >= 1000) {
         steps += 1
+        basic.pause(500)
         led.stopAnimation()
     }
 })
