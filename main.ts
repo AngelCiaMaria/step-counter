@@ -13,5 +13,16 @@ basic.forever(function () {
         steps += 1
         basic.pause(500)
         led.stopAnimation()
+        if (steps == 1) {
+            basic.showLeds(`
+                . # . # .
+                # # . # #
+                . # # # .
+                . . # . .
+                # # . # #
+                `)
+            music.playMelody("C D E F G A B C5 ", 1000)
+            music.playMelody("C D E F G A B C5 ", 1000)
+        }
     }
 })
